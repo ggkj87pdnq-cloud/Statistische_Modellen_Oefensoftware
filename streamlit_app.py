@@ -148,7 +148,7 @@ def genereer_vraag(tabel_raw, model):
     if vraagtype == "b_teken":
         positief = rij["B"] > 0
         return {
-            "vraag": f"De B-coëfficiënt voor **{predictor}** is **{rij['B']:.2f}**. Wat zegt het teken?",
+            "vraag": f"De B-coëfficiënt voor **{predictor}** is **{rij['B']:.2f}**. Wat wil dat zeggen?",
             "opties": [
                 "Bij een positieve B nemen de log odds toe.",
                 "Bij een negatieve B nemen de log odds af.",
